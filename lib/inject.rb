@@ -3,7 +3,7 @@ class Array
     raise "You must pass accumulate a block" unless block.is_a?(Proc)
     init_val.nil? ? accumulate = self.first :  accumulate = init_val
     each do |element|
-      accumulate = block.call(accumulate, element)
+      accumulate = yield(accumulate, element)
     end
     accumulate
   end
