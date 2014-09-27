@@ -1,4 +1,4 @@
 class Array
-  def accumulate
+  def accumulate(result,element)
   end
 end
