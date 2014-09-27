@@ -11,4 +11,8 @@ describe Array do
     expect(lambda {array.accumulate}).to raise_error(ArgumentError)
   end
 
+  it "should return an final result as a Fixnum" do
+    expect(array.accumulate(0,array[0])).to be_a(Fixnum)
+  end
+
 end
