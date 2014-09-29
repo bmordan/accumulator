@@ -5,7 +5,7 @@ describe Array do
   let(:array      ) { [1,2,3,4,5]                                           }
   let(:String     ) { double :String                                        }
   let(:block      ) { Proc.new { |accumulate, element| accumulate=3 }       }
-  let(:bang       ) { Proc.new { |accumulate, element| accumulate }         }
+  let(:bang       ) { Proc.new { |accumulate, element| accumulate   }       }
   let(:accumulate ) { Proc.new { |accumulate, element| accumulate+=element }}
 
   it "should respond to the accumulate method" do
